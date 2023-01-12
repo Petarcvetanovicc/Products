@@ -102,3 +102,32 @@ p {
   color: #fff;
   border-radius: 6px;
 }
+
+
+.product-title, .title {
+  text-transform: capitalize;
+}
+
+.brand {
+  text-transform: capitalize;
+  color: #64748b;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 850px) {
+  .product-wrapper {
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products-container {
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .products-container {
+        grid-template-columns: 1fr 1fr;
+  }
+}
